@@ -6,7 +6,14 @@ using System.Threading.Tasks;
 
 namespace RPSLS
 {
-    class Player
+    public class Player
     {
+        //Variables
+
+
+        //Ctor
+
+
+        //Methods
     }
 }

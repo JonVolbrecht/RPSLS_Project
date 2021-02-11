@@ -8,5 +8,12 @@ namespace RPSLS
 {
     class Game
     {
+        //Variables
+
+
+        //Ctor
+
+
+        //Methods
     }
 }
