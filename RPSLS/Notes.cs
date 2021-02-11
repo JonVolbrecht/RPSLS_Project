@@ -24,9 +24,11 @@ namespace RPSLS
         //Either conclude or loop back to Main Menu(Exit option needed on loop)
 
         //Game class
-        //Player class. ---Methods can be overriden for players or AI to distinguish---
+        //Player class. ---Methods can be overriden for human or AI---
         //Gestures may need to be class with inheritance(maybe later)
         //Program class runs scenario
+
+        //-------------------------------------------------------------------------------------------------------------------------------
 
         //GAMEFLOW: PLAIN ENGLISH
         //PROBLEM: HOW DO WE PLAY THIS GAME?!?!?!
