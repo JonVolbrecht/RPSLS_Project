@@ -29,6 +29,13 @@ namespace RPSLS
         {
             Console.WriteLine(" 1- Rock \n 2- Paper \n 3- Scissors \n 4- Lizard \n 5- Spock");
 
+            bool loopContinue = true;
+            while (loopContinue)
+            {
+
+
+
+            }
         }
     }
 }

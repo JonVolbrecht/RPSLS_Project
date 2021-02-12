@@ -11,24 +11,34 @@ namespace RPSLS
         //Variables
         Player player1;
         Player player2;
-        public List<string> possibleGestures = new List<string>();
-        possibleGestures.Add("Rock");
-        
-
+        public List<string> possibleGestures = new List<string>
+        { "Rock", "Paper", "Scissors", "Lizard", "Spock"};
 
         //Ctor
 
-
         //Methods
-        public void DeclareWinner()
+
+        public void DisplayGestures()
         {
-            if (player1.score == 3)
+            Console.WriteLine("\nPossible Gestures:");
+            possibleGestures.ForEach(Console.WriteLine);
+        }
+
+        public void DisplayRules()
+        {
+            Console.WriteLine("Rules: \n Rock crushes Scissors \n Paper covers Rock  \n Scissors cuts Paper \n Rock crushes Lizard \n Lizard poisons Spock \n Spock smashes Scissors \n Scissors decapitates Lizard \n Lizard eats Paper \n Paper disproves Spock \n Spock vaporizes Rock");
+        }
+
+        public void GetNumberOfPlayers()
+        {
+            Console.WriteLine("\nHow many players? Enter '1' or '2'");
+
+            switch (Console.ReadLine())
             {
-                Console.WriteLine("\n" + player1.name + " wins");
-            }
-            else if (player2.score == 3)
-            {
-                Console.WriteLine("\n" + player2.name + " wins");
+                case "1":
+                    Player 1
             }
         }
+
+    }
 }
