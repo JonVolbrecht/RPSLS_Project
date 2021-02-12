@@ -24,7 +24,6 @@ namespace RPSLS
         //Methods
         public override void GetPlayerInput()
         {
-            Console.WriteLine("\n Please enter your gesture: \n 1- Rock \n 2- Paper \n 3- Scissors \n 4- Lizard \n 5- Spock");
             int number = randomGesture.Next(1, 5);
 
             switch (number)
@@ -40,17 +39,17 @@ namespace RPSLS
                     break;
 
                 case 3:
-                    Console.WriteLine(name + "chose scissors");
+                    Console.WriteLine(name + " chose scissors");
                     gesture = 3;
                     break;
 
                 case 4:
-                    Console.WriteLine(name + "chose Lizard");
+                    Console.WriteLine(name + " chose Lizard");
                     gesture = 4;
                     break;
 
                 case 5:
-                    Console.WriteLine(name + "chose Spock");
+                    Console.WriteLine(name + " chose Spock");
                     gesture = 5;
                     break;
 
