@@ -36,7 +36,18 @@ namespace RPSLS
             switch (Console.ReadLine())
             {
                 case "1":
-                    Player 1
+                    player1 = new Human();
+                    player2 = new AI();
+                    break;
+                case "2":
+                    player1 = new Human();
+                    player2 = new Human();
+                    break;
+                default:
+                    Console.WriteLine("Please enter a valid response.");
+                    GetNumberOfPlayers();
+                    break;
+
             }
         }
 
