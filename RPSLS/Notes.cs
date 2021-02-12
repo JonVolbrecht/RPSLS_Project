@@ -10,7 +10,7 @@ namespace RPSLS
     {
         //"Hey! Want to play RSPLS?". Initiate game/welcome to game(make part of Main Menu)
         //Main Menu -Choose Single player or multiplayer                   -Writeline/Readline/userInput
-        //Input number of AI(limit to two) or players                      -Writeline/Readline/userInput
+        //Two players(AI or ther Human)                                    -Writeline/Readline/userInput
         //Input player names(maybe able to do on player selection screen)  -Writeline/Readline/userInput
         //Choose number of rounds(minimum 3, maybe set at 3)               -Writeline/Readline/userInput
         //Display rules and table of win/loss conditions                   -Writeline/Readline

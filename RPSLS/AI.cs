@@ -18,10 +18,50 @@ namespace RPSLS
         public AI(string name)
         {
             this.name = "HAL";
-
+            Console.WriteLine(name);
         }
 
         //Methods
+        public override void GetPlayerInput()
+        {
+            Console.WriteLine("\n Please enter your gesture: \n 1- Rock \n 2- Paper \n 3- Scissors \n 4- Lizard \n 5- Spock");
+            int number = randomGesture.Next(1, 5);
 
+            switch (number)
+            {
+                case 1:
+                    Console.WriteLine(name + " chose Rock");
+                    gesture = 1;
+                    break;
+
+                case 2:
+                    Console.WriteLine(name + " chose Paper");
+                    gesture = 2;
+                    break;
+
+                case 3:
+                    Console.WriteLine(name + "chose scissors");
+                    gesture = 3;
+                    break;
+
+                case 4:
+                    Console.WriteLine(name + "chose Lizard");
+                    gesture = 4;
+                    break;
+
+                case 5:
+                    Console.WriteLine(name + "chose Spock");
+                    gesture = 5;
+                    break;
+
+
+
+
+            }
+
+
+
+
+        }
     }
 }
