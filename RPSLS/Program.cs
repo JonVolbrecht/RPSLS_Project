@@ -10,13 +10,9 @@ namespace RPSLS
     {
         static void Main(string[] args)
         {
-            //Variables
-
-
-            //Ctor
-
-
-            //Methods
+            Game game = new Game();
+            game.PlayGame();
+            Console.ReadKey();
         }
     }
 }

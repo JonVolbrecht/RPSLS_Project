@@ -70,20 +70,35 @@ namespace RPSLS
             Console.WriteLine("\nPlayer 2, enter your name:");
             player2.GetPlayerName();
         }
-    
-    
-        --------
 
+        public void CompareGestures()
+        {
+            if ((player1.gesture == 1 && player2.gesture == 1) || (player1.gesture == 2 && player2.gesture == 2) || (player1.gesture == 3 && player2.gesture == 3) || (player1.gesture == 4 && player2.gesture == 4) || (player1.gesture == 5 && player2.gesture == 5))
+            {
+                Console.WriteLine("Tie");
+            }
+            else if ((player1.gesture == 1 && player2.gesture == 3) || (player1.gesture == 1 && player2.gesture == 4) || (player1.gesture == 2 && player2.gesture == 1) || (player1.gesture == 2 && player2.gesture == 5) || (player1.gesture == 3 && player2.gesture == 2) || (player1.gesture == 3 && player2.gesture == 4) || (player1.gesture == 4 && player2.gesture == 5) || (player1.gesture == 4 && player2.gesture == 2) || (player1.gesture == 5 && player2.gesture == 3) || (player1.gesture == 5 && player2.gesture == 1))
+            {
+                Console.WriteLine($"{player1.name} Won This Round");
+                player1.score++;
+            }
+            else
+            {
+                Console.WriteLine($"{player2.name} Won This Round");
+                player2.score++;
+            }
+
+        }
     
         public void DeclareWinner()
         {
-            if (player1.score == 2)
+            if (player1.score == 3)
             {
-                Console.WriteLine("\n" + player1.name + " wins");
+                Console.WriteLine("\n" + player1.name + " wins the game.");
             }
-            else if (player2.score == 2)
+            else if (player2.score == 3)
             {
-                Console.WriteLine("\n" + player2.name + " wins");
+                Console.WriteLine("\n" + player2.name + " wins the game.");
             }
         }
     
@@ -103,7 +118,10 @@ namespace RPSLS
             }
         }
     
-    
+        public void PlayGame()
+        {
+
+        }
     
     
     
