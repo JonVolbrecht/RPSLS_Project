@@ -51,7 +51,40 @@ namespace RPSLS
                     break;
 
             }
+        
+        
         }
 
+        public void PlayRound()
+        {
+            Console.WriteLine("\n" + player1.name + " make your choice");
+            player1.GetPlayerInput();
+            Console.WriteLine("\n" + player2.name + " make your choice");
+            player2.GetPlayerInput();
+        }
+    
+        public void PlayerNames()
+        {
+            Console.WriteLine("\nPlayer 1, enter your name:");
+            player1.GetPlayerName();
+            Console.WriteLine("\nPlayer 2, enter your name:");
+            player2.GetPlayerName();
+        }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     }
 }
