@@ -120,7 +120,19 @@ namespace RPSLS
     
         public void PlayGame()
         {
+            DisplayRules();
+            DisplayGestures();
+            GetNumberOfPlayers();
+            PlayerNames();
 
+            while (player1.score != 3 && player2.score != 3)
+            {
+                PlayRound();
+                CompareGestures();
+            }
+
+            DeclareWinner();
+            PlayAgain();
         }
     
     
