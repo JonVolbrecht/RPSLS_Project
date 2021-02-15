@@ -12,6 +12,7 @@ namespace RPSLS
         public string name;
         public int gesture;
         public int score;
+        
 
 
         //Ctor

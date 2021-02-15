@@ -72,14 +72,36 @@ namespace RPSLS
         }
     
     
-        
+        --------
+
     
+        public void DeclareWinner()
+        {
+            if (player1.score == 2)
+            {
+                Console.WriteLine("\n" + player1.name + " wins");
+            }
+            else if (player2.score == 2)
+            {
+                Console.WriteLine("\n" + player2.name + " wins");
+            }
+        }
     
-    
-    
-    
-    
-    
+        public void PlayAgain()
+        {
+            Console.WriteLine("\n\n\nWould you like to play again? \n\n If yes, press '1' \n If no, press '2'");
+            string userInput = Console.ReadLine();
+
+            if (userInput == "1")
+            {
+                Console.Clear();
+                PlayGame();
+            }
+            else
+            {
+                Console.WriteLine("\nGoodbye");
+            }
+        }
     
     
     
